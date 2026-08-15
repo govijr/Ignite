@@ -1,20 +1,20 @@
 # 💥 Ignition - Robust Real-Time Event Streaming Service in Rust 🦀
   
-[![Share on X](https://img.shields.io/badge/share-000000?logo=x&logoColor=white)](https://x.com/intent/tweet?text=Check%20out%20this%20project%20on%20GitHub:%20https://github.com/Axnjr/Ignite%20%23OpenIDConnect%20%23Security%20%23Authentication)
-[![Share on Facebook](https://img.shields.io/badge/share-1877F2?logo=facebook&logoColor=white)](https://www.facebook.com/sharer/sharer.php?u=https://github.com/Axnjr/Ignite)
-[![Share on LinkedIn](https://img.shields.io/badge/share-0A66C2?logo=linkedin&logoColor=white)](https://www.linkedin.com/sharing/share-offsite/?url=https://github.com/Axnjr/Ignite)
-[![Share on Reddit](https://img.shields.io/badge/share-FF4500?logo=reddit&logoColor=white)](https://www.reddit.com/submit?title=Check%20out%20this%20project%20on%20GitHub:%20https://github.com/Axnjr/Ignite)
-[![Share on Telegram](https://img.shields.io/badge/share-0088CC?logo=telegram&logoColor=white)](https://t.me/share/url?url=https://github.com/Axnjr/Ignite&text=Check%20out%20this%20project%20on%20GitHub)
+[![Share on X](https://img.shields.io/badge/share-000000?logo=x&logoColor=white)](https://x.com/intent/tweet?text=Check%20out%20this%20project%20on%20GitHub:%20https://github.com/govijr/Ignite%20%23OpenIDConnect%20%23Security%20%23Authentication)
+[![Share on Facebook](https://img.shields.io/badge/share-1877F2?logo=facebook&logoColor=white)](https://www.facebook.com/sharer/sharer.php?u=https://github.com/govijr/Ignite)
+[![Share on LinkedIn](https://img.shields.io/badge/share-0A66C2?logo=linkedin&logoColor=white)](https://www.linkedin.com/sharing/share-offsite/?url=https://github.com/govijr/Ignite)
+[![Share on Reddit](https://img.shields.io/badge/share-FF4500?logo=reddit&logoColor=white)](https://www.reddit.com/submit?title=Check%20out%20this%20project%20on%20GitHub:%20https://github.com/govijr/Ignite)
+[![Share on Telegram](https://img.shields.io/badge/share-0088CC?logo=telegram&logoColor=white)](https://t.me/share/url?url=https://github.com/govijr/Ignite&text=Check%20out%20this%20project%20on%20GitHub)
 
 # Overview 
 
 I worked on this project during my internship at **Dynamite** in the notifications team, later I decided to continue the project as SaaS side hustle.  This repository serves as a **MonoRepo** for all the `Rust` components involved in the project.  
 
 ### Other Components:
-- [**The Web App**](https://github.com/Axnjr/Ignition-Web)  
+- [**The Web App**](https://github.com/govijr/Ignition-Web)  
 - [**Client Pub-Sub SDK (JavaScript)**](https://github.com/Ignition-Dev/Js-Sdk)  
 - [**Test Playground**](https://github.com/Ignition-Dev/Js-Sdk/tree/main/playground)  
-- [**Lambda Functions**](https://github.com/Axnjr/dailyCronJob)  
+- [**Lambda Functions**](https://github.com/govijr/dailyCronJob)  
 
 ---
 
@@ -38,7 +38,7 @@ ws.on("test", (data) => { // eventName, callback
 ws.emit("test", "test", "hello world") // eventName: String, channelName: String, message: Any
 
 ws.emit("test", "test", {
-  "Name": "Axn",
+  "Name": "govi",
   "Age": 21,
   "Occupation": "SDE"
 })
@@ -53,8 +53,8 @@ ws.emit("tes", "test", 56);
 
 # Architecture 
 
-- **Hobby** and **Pro** requests are handled by the [`ignition_shared_v5`](https://github.com/Axnjr/Ignite/tree/main/ignition_shared_v5) container, which is deployed using **AWS Elastic Container Service (ECS)**.  
-- For **Enterprise** clients, a dedicated instance is provisioned with the [`dedicated_v2`](https://github.com/Axnjr/Ignite/tree/main/WssDedicated) container for optimal performance. 💥
+- **Hobby** and **Pro** requests are handled by the [`ignition_shared_v5`](https://github.com/govijr/Ignite/tree/main/ignition_shared_v5) container, which is deployed using **AWS Elastic Container Service (ECS)**.  
+- For **Enterprise** clients, a dedicated instance is provisioned with the [`dedicated_v2`](https://github.com/govijr/Ignite/tree/main/WssDedicated) container for optimal performance. 💥
 
 ---
 
@@ -118,14 +118,14 @@ ws.emit("tes", "test", 56);
 
 # Docker Hub links 
 
-#### [**Public Shared Server**](https://hub.docker.com/r/axnjr/ignition_shared)
+#### [**Public Shared Server**](https://hub.docker.com/r/govijr/ignition_shared)
 ```
-docker pull axnjr/ignition_shared:v5
+docker pull govijr/ignition_shared:v5
 ```
 
-#### [**Dedicated Private Server**](https://hub.docker.com/r/axnjr/ignition_wssd)
+#### [**Dedicated Private Server**](https://hub.docker.com/r/govijr/ignition_wssd)
 ```
-docker pull axnjr/ignition_wssd
+docker pull govijr/ignition_wssd
 ```
 
 # Feel free to explore and contribute!   

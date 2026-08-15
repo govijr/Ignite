@@ -21,6 +21,6 @@ Content-Disposition: attachment; filename="userdata.txt"
 sudo yum update -y
 sudo yum install docker
 sudo service docker start 
-sudo docker pull axnjr/ignition_wssd:1
-sudo docker run -e VALIDATION_TOKEN=${key as string} -p 3000:3000 axnjr/ignition_wssd:1
+sudo docker pull govijr/ignition_wssd:1
+sudo docker run -e VALIDATION_TOKEN=${key as string} -p 3000:3000 govijr/ignition_wssd:1
 --//--

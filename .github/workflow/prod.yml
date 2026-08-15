@@ -25,7 +25,7 @@ jobs:
           context: ./ignition_shared_v5
           file: ./ignition_shared_v5/Dockerfile
           push: true
-          tags: axnjr/ignition_wsss:latest
+          tags: govijr/ignition_wsss:latest
 
 
 # name: CICD Pipeline
@@ -55,17 +55,17 @@ jobs:
 #           context: ./WebsocketServer
 #           file: ./WebsocketServer/Dockerfile
 #           push: true
-#           tags: axnjr/ignition_wsss:latest
+#           tags: govijr/ignition_wsss:latest
 
   # deploy:
   #   # needs: build
   #   runs-on: self-hosted
   #   steps:
   #     - name: Pulling image from docker hub
-  #       run: docker pull axnjr/ignition_wsss:latest
+  #       run: docker pull govijr/ignition_wsss:latest
   #     - name: Deleting older container
   #       run: docker rm -f ignition_wss-shared
   #     - name: Run docker container
-  #       run: docker run -d -e DB_URL=${{ secrets.DB_URL }} -e AWS_ACCESS_KEY_ID=${{ secrets.AWS_ACCESS_KEY_ID }} -e AWS_SECRET_ACCESS_KEY=${{ secrets.AWS_SECRET_ACCESS_KEY }} -e REGION=${{ secrets.REGION }} -e PORT=${{ secrets.PORT }} --network host --name ignition_wss-shared axnjr/ignition_wsss:latest
+  #       run: docker run -d -e DB_URL=${{ secrets.DB_URL }} -e AWS_ACCESS_KEY_ID=${{ secrets.AWS_ACCESS_KEY_ID }} -e AWS_SECRET_ACCESS_KEY=${{ secrets.AWS_SECRET_ACCESS_KEY }} -e REGION=${{ secrets.REGION }} -e PORT=${{ secrets.PORT }} --network host --name ignition_wss-shared govijr/ignition_wsss:latest
   #     - name: Check container logs
   #       run: docker logs ignition_wss-shared
